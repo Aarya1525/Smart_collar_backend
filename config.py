@@ -23,3 +23,6 @@ ALLOWED_ORIGINS = [
     "http://localhost:8443",   # Current Vite port
     "null",                    # file:// origins for HTML5 admin dashboard
 ]
+
+# AI Service connection (FastAPI Dog AI Server)
+AI_SERVICE_URL = os.getenv("AI_SERVICE_URL", "http://localhost:8000")
